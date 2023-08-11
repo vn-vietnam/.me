@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NTK&reg;</title>
+    <!-- logo -->
+    <link rel="icon" href="./img/icon.png" />
+    <!-- toast -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <!-- icon -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!-- lenis -->
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
+    <!-- style -->
+    <link rel="stylesheet" href="porfolio.css" />
+    <!-- emailjs -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+  </head>
+  <body>
+    <!-- list overlay -->
+    <div class="list-overlay">
+      <a onclick="closeBox()" href="#about">about</a>
+      <a href="#product" onclick="closeBox()">product</a>
+      <a href="#skills" onclick="closeBox()">skills</a>
+      <a href="#contact" onclick="closeBox()">contact</a>
+    </div>
+    <div class="main">
+      <!-- overlay -->
+      <div class="overlay">
+        <div class="text-loader">
+          <div class="loading">
+            NTK&reg;
+            <div class="bar"></div>
+          </div>
+          <span class="counter"> </span>
+        </div>
+      </div>
+      <!-- header -->
+      <div class="header">
+        <div class="left">
+          <div class="logo">NTK&reg;</div>
+        </div>
+        <div class="right">
+          <a href="#about">about</a>
+          <a href="#product">product</a>
+          <a href="#skills">skills</a>
+          <a href="#contact">contact</a>
+        </div>
+        <div class="list" onclick="btnNavigate()">
+          <ion-icon name="list-outline"></ion-icon>
+        </div>
+      </div>
+      <!-- container -->
+      <div class="container" id="about">
+        <div class="container-left">
+          <h1>HELLO,</h1>
+          <h1>I'M KIEN</h1>
+          <h1>I'M A WEB DEVELOPER</h1>
+          <h2>WELCOME</h2>
+          <h2>TO MY WEBSITE</h2>
+        </div>
+        <div class="container-right">
+          <img src="img/hi.svg" alt="image" />
+        </div>
+      </div>
+      <!-- product -->
+      <div class="product" id="product">
+        <div class="items">
+          <div class="item">
+            <div class="item-wrapper">
+              <img src="img/img1.jpg" alt="" />
+              <div class="img-overlay"></div>
+              <div class="item-copy">
+                <div class="item-name">
+                  Project 1 <span>#REACTJS - #TAIWIND</span>
+                  <span class="go-link"
+                    ><a href="/"><ion-icon name="link-outline"></ion-icon></a
+                  ></span>
+                </div>
+                <a href="/" class="id"
+                  ><ion-icon name="logo-github"></ion-icon
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item-wrapper">
+              <img src="img/img2.jpg" alt="" />
+              <div class="img-overlay"></div>
+              <div class="item-copy">
+                <div class="item-name">
+                  Project 2<span>#HTML - #JS - #CSS</span>
+                  <span class="go-link"
+                    ><a href="/"><ion-icon name="link-outline"></ion-icon></a
+                  ></span>
+                </div>
+                <a href="/" class="id"
+                  ><ion-icon name="logo-github"></ion-icon
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item-wrapper">
+              <img src="img/img3.jpg" alt="" />
+              <div class="img-overlay"></div>
+              <div class="item-copy">
+                <div class="item-name">
+                  Project 3<span>#NEXTJS - #MONGODB</span>
+                  <span class="go-link"
+                    ><a href="/"><ion-icon name="link-outline"></ion-icon></a
+                  ></span>
+                </div>
+                <a href="/" class="id"
+                  ><ion-icon name="logo-github"></ion-icon
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item-wrapper">
+              <img src="img/img4.jpg" alt="" />
+              <div class="img-overlay"></div>
+              <div class="item-copy">
+                <div class="item-name">
+                  Project 4<span>#REACTJS</span>
+                  <span class="go-link"
+                    ><a href="/"><ion-icon name="link-outline"></ion-icon></a
+                  ></span>
+                </div>
+                <a href="/" class="id"
+                  ><ion-icon name="logo-github"></ion-icon
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- skills -->
+      <div class="skills" id="skills">
+        <h1>SKILLS</h1>
+        <div class="marquee">
+          <div class="marquee_inner">
+            <div class="marquee_part">
+              <img src="img/c-.png" alt="" />
+            </div>
+            <div class="marquee_part">
+              <img src="img/c-sharp.png" alt="" />
+            </div>
+            <div class="marquee_part">
+              <img src="img/css-3.png" alt="" />
+            </div>
+            <div class="marquee_part">
+              <img src="img/php.png" alt="" />
+            </div>
+            <div class="marquee_part">
+              <img src="img/nodejs.png" alt="" />
+            </div>
+            <div class="marquee_part">
+              <img src="img/wordpress.png" alt="" />
+            </div>
+            <div class="marquee_part">
+              <img src="img/library.png" alt="" />
+            </div>
+            <!-- repeat -->
+            <div class="marquee_part">
+              <img src="img/c-.png" alt="" />
+            </div>
+            <div class="marquee_part">
+              <img src="img/c-sharp.png" alt="" />
+            </div>
+            <div class="marquee_part">
+              <img src="img/css-3.png" alt="" />
+            </div>
+            <div class="marquee_part">
+              <img src="img/php.png" alt="" />
+            </div>
+            <div class="marquee_part">
+              <img src="img/nodejs.png" alt="" />
+            </div>
+            <div class="marquee_part">
+              <img src="img/wordpress.png" alt="" />
+            </div>
+            <div class="marquee_part">
+              <img src="img/library.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- contact -->
+      <div class="contact" id="contact">
+        <div class="contact-left">
+          <h1>Contact</h1>
+          <div class="text-contact">
+            <h2>I BELIEVE IN THE POWER OF</h2>
+            <h2>DIGITAL, AND I LOVE COLLABORATING</h2>
+            <h2>WITH YOU THAT FEEL THE SAME. LET'S CONNECT.</h2>
+          </div>
+        </div>
+
+        <form action="" class="contact-right" id="myForm">
+          <div class="input">
+            <input
+              type="text"
+              placeholder="NAME*"
+              required
+              name="from_name"
+              class="name"
+              autocomplete="off"
+            />
+            <input
+              type="text"
+              placeholder="EMAIL*"
+              required
+              name="from_email"
+              class="email"
+              autocomplete="off"
+            />
+            <input
+              type="text"
+              placeholder="TOPIC*"
+              required
+              name="topic"
+              class="topic"
+              autocomplete="off"
+            />
+            <input
+              type="text"
+              placeholder="NUMBER*"
+              required
+              name="number"
+              class="number"
+              autocomplete="off"
+            />
+          </div>
+          <input
+            type="text"
+            required
+            name="message"
+            class="mes"
+            placeholder="MESSAGE*"
+            autocomplete="off"
+          />
+
+          <button class="btn" type="submit">submit</button>
+          <div class="info">
+            <div class="email">
+              <div>Email</div>
+              <div>kient2005@gmai.com</div>
+            </div>
+            <div class="phone">
+              <div>Phone Number</div>
+              <div>+84982311813</div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <!-- footer -->
+      <div class="footer">
+        <div class="footer-left">
+          <p>NTK® ©2023</p>
+        </div>
+        <div class="footer-right">
+          <a target="_blank" href="https://github.com/vn-vietnam">github</a>
+          <a target="_blank" href="/">instagram</a>
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/kiên-nguyễn-trung-1b95a1269"
+            >linkedin</a
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    // count
+    function startLoader() {
+      let counter = document.querySelector(".counter");
+      let bar = document.querySelector(".bar");
+      let currentCounter = 0;
+      function updateCounter() {
+        currentCounter += Math.floor(Math.random() * 10) + 1;
+        if (currentCounter > 100) {
+          currentCounter = 100;
+        }
+        bar.style.width = currentCounter + "px";
+        counter.textContent = currentCounter + "%";
+        let delay = Math.floor(Math.random() * 200) + 50;
+        setTimeout(updateCounter, delay);
+      }
+      updateCounter();
+    }
+    startLoader();
+
+    // icon movement
+
+    ScrollTrigger.create({
+      animation: gsap.from(".marquee_inner", {
+        xPercent: -100,
+      }),
+      scrub: true,
+      trigger: ".content",
+      start: "top bottom",
+      endTrigger: ".content",
+      end: "bottom top",
+    });
+
+    // overlay
+
+    gsap.to(".text-loader", 0.25, {
+      delay: 3.5,
+      opacity: 0,
+    });
+    gsap.to(".overlay", 3, {
+      delay: 3,
+      opacity: 1,
+      height: 0,
+      ease: "power4.inOut",
+    });
+    gsap.from(".logo", 4, {
+      delay: 4,
+      opacity: 1,
+      height: 0,
+      top: "10px",
+      ease: "power4.inOut",
+    });
+    gsap.from(".right >a", 2, {
+      opacity: 0,
+      height: 0,
+      ease: "power4.inOut",
+      delay: 5,
+
+      stagger: {
+        amount: 0.4,
+      },
+    });
+    gsap.from(".container-left >h1", 2, {
+      opacity: 0,
+      height: 0,
+      ease: "power4.inOut",
+      delay: 5,
+
+      stagger: {
+        amount: 0.4,
+      },
+    });
+    gsap.from(".container-left >h2", 2, {
+      opacity: 0,
+      height: 0,
+      ease: "power4.inOut",
+      delay: 6,
+
+      stagger: {
+        amount: 0.4,
+      },
+    });
+
+    gsap.from(".container-right>img", 2, {
+      delay: 7,
+      xPercent: 100,
+      opacity: 1,
+
+      ease: "power4.inOut",
+    });
+
+    gsap.from(".contact-left >h1", 3, {
+      scrollTrigger: {
+        trigger: `.contact-left`,
+        start: `top bottom`,
+        end: `bottom 10%`,
+        duration: 3,
+      },
+      xPercent: 10,
+      opacity: 0,
+    });
+    gsap.from(".text-contact >h2", 3, {
+      scrollTrigger: {
+        trigger: `.contact-left`,
+        start: `center bottom`,
+        end: `center center`,
+        duration: 3,
+      },
+      stagger: {
+        amount: 0.5,
+      },
+      xPercent: 10,
+      opacity: 0,
+    });
+    gsap.from("form", 3, {
+      scrollTrigger: {
+        trigger: `.contact-left`,
+        start: `center bottom`,
+        end: `center center`,
+        duration: 3,
+      },
+
+      opacity: 0,
+      height: 0,
+      top: "10px",
+      ease: "power4.inOut",
+    });
+
+    // lenis
+    const lenis = new Lenis();
+
+    lenis.on("scroll", (e) => {
+      // console.log(e);
+    });
+
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+  </script>
+  <!-- emailjs -->
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("user_qejemn0KanU4BkIiAtguA");
+    })();
+  </script>
+  <script>
+    const form = document.getElementById("myForm");
+
+    form.addEventListener("submit", function (e) {
+      // prevent the form from submitting
+      e.preventDefault();
+      emailjs.sendForm("service_sji7qfd", "template_t8xsc3i", "#myForm").then(
+        function (response) {
+          console.log("SUCCESS!", response.status, response.text);
+          Toastify({
+            text: "Message has been sent! Thank you !!!",
+            style: {
+              background: "linear-gradient(to right, #1abc9c, #2980b9)",
+            },
+            offset: {
+              x: 50,
+              y: 10,
+            },
+          }).showToast();
+        },
+        function (error) {
+          console.log("FAILED...", error);
+          Toastify({
+            text: "Something wrong in somewhere !!!",
+            style: {
+              background: "linear-gradient(to right, #c0392b, #f1c40f)",
+            },
+            offset: {
+              x: 50,
+              y: 10,
+            },
+          }).showToast();
+        }
+      );
+    });
+  </script>
+  <!-- button responsive -->
+  <script>
+    const list = document.querySelector(".list-overlay");
+    const button_list = document.querySelector(".list");
+    function btnNavigate() {
+      if (list.style.display === "flex") {
+        list.style.display = "none";
+      } else {
+        list.style.display = "flex";
+      }
+      console.log(list.style.display);
+    }
+    function closeBox() {
+      list.style.display = "none";
+    }
+  </script>
+  <!-- toast -->
+  <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/toastify-js"
+  ></script>
+</html>

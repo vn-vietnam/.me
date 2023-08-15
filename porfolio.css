@@ -138,6 +138,7 @@ body {
   overflow: hidden;
 }
 .container-right {
+  overflow: hidden;
   display: flex;
   justify-content: end;
   flex: 2;

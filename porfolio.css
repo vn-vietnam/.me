@@ -137,6 +137,9 @@ body {
   padding-top: 5%;
   overflow: hidden;
 }
+.container-left h2 {
+  overflow: hidden;
+}
 .container-right {
   overflow: hidden;
   display: flex;

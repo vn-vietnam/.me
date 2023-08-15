@@ -485,6 +485,7 @@ body {
     display: flex;
     padding-top: 2%;
     flex-direction: row;
+    height: max-content;
   }
   .item-name {
     height: fit-content;

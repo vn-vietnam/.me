@@ -180,8 +180,19 @@ body {
   height: 100%;
   top: 0;
   left: 0;
-  background-color: #bdc3c7;
   transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.ovelay-1{
+  background: url("./img/3.png");
+}
+.ovelay-2{
+  background: url("./img/2.png");
+}
+.ovelay-3{
+  background: url("./img/4.png");
+}
+.ovelay-4{
+  background: url("./img/1.png");
 }
 .item-wrapper:hover .img-overlay {
   top: -100%;
